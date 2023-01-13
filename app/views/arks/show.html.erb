@@ -1,0 +1,13 @@
+  <div class="return_button">
+  <%= render 'pages/navbar' %>
+    <%= link_to :back do%>
+      <i class="fa-solid fa-circle-arrow-left fs-4" style="color:black"></i>
+    <% end %>
+  </div>
+
+<div class="showark container">
+  <h1 class="mt-3">Dans le même style</h1>
+
+<div class="showark">
+  <%= render "content", ark: @ark  %>
+</div>

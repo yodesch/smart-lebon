@@ -1,0 +1,27 @@
+<div class="container">
+<%= render 'pages/navbar' %>
+  <div class="return_button">
+    <%= link_to :back do%>
+      <span style="color:black"><i class="fa-solid fa-circle-arrow-left fs-4"></i></span>
+    <% end %>
+  </div>
+  <br>
+  <h1>Mon portfolio</h1>
+    <div class = "favorite_cards">
+      <% @favorites.each do | favorite | %>
+        <div class="favorite_card_category">
+          <%= link_to favorite_path(favorite) do %>
+            <%= image_tag favorite.ark.image_url %></span>
+            <div class="truncate">
+            <span style="color:black"><%= favorite.ark.name %></span> <br>
+            <span style="color:black" class="artist_name"><%= favorite.ark.artist.name %></span>
+            </div>
+          <% end %>
+          <%= link_to favorite_path(favorite), data: { turbo_method: :delete, turbo_confirm: "Vous êtes sûr(e)?" } do %>
+            <span style="color:black"><i class="fa-solid fa-trash fs-6"></i></span>
+          <% end %>
+        </div>
+      <% end %>
+        </div>
+    </div>
+</div>

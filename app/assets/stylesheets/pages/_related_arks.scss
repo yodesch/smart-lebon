@@ -1,0 +1,145 @@
+  .related_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 12px;
+      text-decoration: none;
+  }
+
+
+.related_card_category {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 12px;
+  font-weight:lighter;
+  border-radius: 5px;
+  text-decoration: none;
+  img{
+    height: 10rem;
+  }
+}
+
+.icons {
+  text-decoration: none;
+}
+
+.related_container {
+  margin-top: 10%;
+}
+.related_new_container {
+  margin : 0 5% 5% 5%
+}
+
+.artist_name {
+  font-style: italic;
+}
+
+.truncate {
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flash {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  margin: 8px;
+  animation: opacity 2s linear forwards;
+}
+
+.flash-success {
+  background: #aaebb9;
+  color: #135c15;
+}
+
+.alert.flash-success {
+bottom: unset;
+right: 16px;
+left: 16px;
+top: 16px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  } 90% {
+    opacity: 1;
+  } 99% {
+    opacity: 0;
+  } 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .favorite_cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .favorite_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .favorite_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .favorite_cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.flash {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  margin: 8px;
+  animation: opacity 2s linear forwards;
+}
+
+.flash-success {
+  background: #aaebb9;
+  color: #135c15;
+}
+
+.alert.flash-success {
+bottom: unset;
+right: 16px;
+left: 16px;
+top: 16px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  } 90% {
+    opacity: 1;
+  } 99% {
+    opacity: 0;
+  } 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

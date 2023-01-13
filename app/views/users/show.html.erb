@@ -1,0 +1,25 @@
+<div class="containerprofil">
+<div class="titleprofil">
+  <h1>Mon profil</h1>
+  </div>
+  <%#= simple_form_for(@user) do |f| %>
+    <%#= f.input :avatar, as: :file %>
+    <%#= f.submit %>
+  <%#end %>
+
+ <div class="profil">
+  <%= link_to "Image du jour", root_path %>
+<br>
+  <%= link_to "Mon portfolio", favorites_path %>
+<br>
+  <%= link_to "Tous les arts",  related_arks_ark_path  %>
+<br>
+  <%= link_to "Etre un artiste", "https://openai.com/dall-e-2/", target: "_blank" %>
+<br>
+  <%= link_to "Mes préferences", choose_preferences_path %>
+<br>
+  <%= link_to "Editer mon profil", edit_user_registration_path %>
+<br>
+  <%= button_to "Déconnexion", destroy_user_session_path, method: :delete, data: {turbo: false}, class: "button_to" %>
+  </div>
+</div>

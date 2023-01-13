@@ -1,0 +1,77 @@
+.login-container {
+  background-image: url(https://media.istockphoto.com/id/1336449533/fr/photo/carte-florale-vintage-belles-fleurs-de-jardin-pivoines.jpg?b=1&s=170667a&w=0&k=20&c=lLVW5wQ9YZVpmNUrArfOIJS93DcYeX2YUhU7dKdCh7I=);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  background-position: center;
+  margin-top: -136px
+}
+
+.log {
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  margin-top: 15vh;
+}
+
+.logo-smart-login {
+  width: 16rem;
+}
+
+.logo-smart-login1 img {
+  margin-top: 11rem;
+  margin-bottom: 4rem;
+
+}
+
+.log h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-bottom: 1rem
+}
+
+.log label {
+  color: white;
+}
+
+.liens-log {
+  text-decoration: none;
+}
+
+.form-inputs {
+  border-radius: 25px;
+}
+
+.emailinput {
+  border-radius: 25px;
+}
+
+.loginbtn {
+  background-color: black;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  width: 20rem;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 13rem;
+  font-size: 18px;
+  color: white !important;
+
+  .btn {
+    color: white !important;
+  }
+}
+
+.loginbtn:hover {
+  color: white;
+}
+
+.sign-up {
+  text-decoration: none ;
+  color: white;
+  margin-left: 11rem;
+  margin: 10rem;
+}
+
+.sign-up:hover {
+  color: white;
+}

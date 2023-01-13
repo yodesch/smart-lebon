@@ -1,0 +1,65 @@
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.image-preferences {
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+  padding: 2px;
+  object-fit: cover;
+}
+
+input[type="checkbox"]:checked + label img {
+  border: 3px solid rgb(0, 179, 255);
+}
+
+.backgroundimg {
+  background-image: url(https://media.istockphoto.com/id/1336449533/fr/photo/carte-florale-vintage-belles-fleurs-de-jardin-pivoines.jpg?b=1&s=170667a&w=0&k=20&c=lLVW5wQ9YZVpmNUrArfOIJS93DcYeX2YUhU7dKdCh7I=);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.container-choose {
+  background-color: #f5f5f5;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  border-radius: 15px 15px 0 0;
+  padding: 2rem 0;
+}
+
+.container-choose h2 {
+  color: black;
+  text-align: center;
+
+}
+
+.container-choose p {
+  color: black;
+  text-align: center;
+}
+
+.container-choose form {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.button-preferences {
+  margin-top: 3rem;
+  color: #fff;
+  border:none;
+  border-radius:20px;
+  background: black;
+  padding: 8px 100px;
+
+}
+
+.logo-choose-preferences {
+  text-align: center;
+  margin-top: 3rem
+}
